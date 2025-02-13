@@ -34,7 +34,7 @@ jobs:
           username: ubuntu
           key: ${{ secrets.SSH_PRIVATE_KEY }}
           script: |
-            cd /home/ubuntu/fastapi-book-project
+            cd fastapi-book-project
             git pull origin main
             docker-compose down --remove-orphans
             docker-compose pull
