@@ -24,8 +24,8 @@ jobs:
 
       - name: Build and Push Docker Image
         run: |
-          docker build -t AyBims/fastapi-app:latest .
-          docker push AyBims/fastapi-app:latest
+          docker build -t aybims/fastapi-app:latest .
+          docker push aybims/fastapi-app:latest
 
       - name: Deploy to EC2 Server
         uses: appleboy/ssh-action@v0.1.7
