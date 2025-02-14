@@ -38,8 +38,6 @@ jobs:
           username: ubuntu
           key: ${{ secrets.SSH_PRIVATE_KEY }}
           script: |
-            cd fastapi-book-project
-            sudo git pull origin main
             sudo docker pull ${{ secrets.DOCKERHUB_USERNAME }}/fastapi-app:latest
             sudo docker stop fastapi-app || true
             sudo docker rm fastapi-app || true
